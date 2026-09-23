@@ -1,0 +1,118 @@
+{
+  "name": "ICN292-Lab3-Emisor",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "8d0f7640-cee2-401b-b79a-eef47df318ab",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "{ \"solicitudes\": [\n  {\n    \"id_solicitud\": \"DEV-1115\",\n    \"sku\": \"AU-210\",\n    \"unidades\": \"1\",\n    \"monto\": \"19990\",\n    \"dias_desde_compra\": \"3\",\n    \"estado_producto\": \"sin_abrir\",\n    \"email_cliente\": \"cliente1@example.cl\"\n  },\n  {\n    \"id_solicitud\": \"DEV-1116\",\n    \"sku\": \"TE-330\",\n    \"unidades\": \"2\",\n    \"monto\": \"69980\",\n    \"dias_desde_compra\": \"5\",\n    \"estado_producto\": \"abierto_sin_uso\",\n    \"email_cliente\": \"cliente2@example.cl\"\n  },\n  {\n    \"id_solicitud\": \"DEV-1117\",\n    \"sku\": \"HV-050\",\n    \"unidades\": \"1\",\n    \"monto\": \"24990\",\n    \"dias_desde_compra\": \"12\",\n    \"estado_producto\": \"con_fallas\",\n    \"email_cliente\": \"cliente3@example.cl\"\n  },\n  {\n    \"id_solicitud\": \"DEV-1118\",\n    \"sku\": \"MW-150\",\n    \"unidades\": \"1\",\n    \"monto\": \"79990\",\n    \"dias_desde_compra\": \"4\",\n    \"estado_producto\": \"sin_abrir\",\n    \"email_cliente\": \"cliente4@example.cl\"\n  },\n  {\n    \"id_solicitud\": \"DEV-1119\",\n    \"sku\": \"PL-120\",\n    \"unidades\": \"1\",\n    \"monto\": \"45990\",\n    \"dias_desde_compra\": \"25\",\n    \"estado_producto\": \"danado_por_uso\",\n    \"email_cliente\": \"cliente5@example.cl\"\n  },\n  {\n    \"id_solicitud\": \"DEV-1120\",\n    \"sku\": \"AS-260\",\n    \"unidades\": \"1\",\n    \"monto\": \"89990\",\n    \"dias_desde_compra\": \"2\",\n    \"estado_producto\": \"con_fallas\",\n    \"email_cliente\": \"cliente6@example.cl\"\n  },\n  {\n    \"id_solicitud\": \"DEV-1121\",\n    \"sku\": \"LV-330\",\n    \"unidades\": \"1\",\n    \"monto\": \"289990\",\n    \"dias_desde_compra\": \"9\",\n    \"estado_producto\": \"sin_abrir\",\n    \"email_cliente\": \"cliente7@example.cl\"\n  },\n  {\n    \"id_solicitud\": \"DEV-1122\",\n    \"sku\": \"PL-120\",\n    \"unidades\": \"1\",\n    \"monto\": \"45990\",\n    \"dias_desde_compra\": \"2\",\n    \"estado_producto\": \"sin_abrir\",\n    \"email_cliente\": \"cliente8@example.cl\"\n  },\n  {\n    \"id_solicitud\": \"DEV-1123\",\n    \"sku\": \"AU-210\",\n    \"unidades\": \"2\",\n    \"monto\": \"39980\",\n    \"dias_desde_compra\": \"15\",\n    \"estado_producto\": \"danado_por_uso\",\n    \"email_cliente\": \"cliente9@example.cl\"\n  },\n  {\n    \"id_solicitud\": \"DEV-1124\",\n    \"sku\": \"HV-050\",\n    \"unidades\": \"2\",\n    \"monto\": \"49980\",\n    \"dias_desde_compra\": \"1\",\n    \"estado_producto\": \"abierto_sin_uso\",\n    \"email_cliente\": \"cliente10@example.cl\"\n  },\n  {\n    \"id_solicitud\": \"DEV-1125\",\n    \"sku\": \"TE-330\",\n    \"unidades\": \"1\",\n    \"monto\": \"34990\",\n    \"dias_desde_compra\": \"22\",\n    \"estado_producto\": \"sin_abrir\",\n    \"email_cliente\": \"cliente11@example.cl\"\n  },\n  {\n    \"id_solicitud\": \"DEV-1126\",\n    \"sku\": \"MW-150\",\n    \"unidades\": \"1\",\n    \"monto\": \"79990\",\n    \"dias_desde_compra\": \"8\",\n    \"estado_producto\": \"con_fallas\",\n    \"email_cliente\": \"cliente12@example.cl\"\n  },\n  {\n    \"id_solicitud\": \"DEV-C01\",\n    \"sku\": \"CB-010\",\n    \"unidades\": \"1\",\n    \"monto\": \"9990\",\n    \"dias_desde_compra\": \"1\",\n    \"estado_producto\": \"sin_abrir\",\n    \"email_cliente\": \"control01@example.cl\"\n  },\n  {\n    \"id_solicitud\": \"DEV-C02\",\n    \"sku\": \"LV-330\",\n    \"unidades\": \"1\",\n    \"monto\": \"289990\",\n    \"dias_desde_compra\": \"2\",\n    \"estado_producto\": \"sin_abrir\",\n    \"email_cliente\": \"control02@example.cl\"\n  },\n  {\n    \"id_solicitud\": \"DEV-C03\",\n    \"sku\": \"MW-150\",\n    \"unidades\": \"1\",\n    \"monto\": \"79990\",\n    \"dias_desde_compra\": \"29\",\n    \"estado_producto\": \"abierto_sin_uso\",\n    \"email_cliente\": \"control03@example.cl\"\n  }\n]\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        224,
+        0
+      ],
+      "id": "8d1ae43d-1085-4b79-988d-db37ee3b7f4a",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://benjagacitua.app.n8n.cloud/webhook/triage-497",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": {
+          "batching": {
+            "batch": {
+              "batchSize": 1,
+              "batchInterval": 5000
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        528,
+        0
+      ],
+      "id": "38ea7128-a550-4c11-921b-ba3467e64964",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "solicitudes",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        352,
+        160
+      ],
+      "id": "aea0666a-58ba-4734-ab92-4e262a51073a",
+      "name": "Split Out"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Split Out",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "b2f739f6-f0b0-4b92-8b88-dc1da06c9af2",
+  "meta": {
+    "instanceId": "7e207acac486133ec169e6fe001e10d2eaae3b29a5bf5075193f02ad99bdd0b4"
+  },
+  "nodeGroups": [],
+  "id": "wHI0yaue2msHaDZe",
+  "tags": []
+}
