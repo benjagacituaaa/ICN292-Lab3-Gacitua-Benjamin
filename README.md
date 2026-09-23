@@ -1,7 +1,7 @@
 # ICN292 - Laboratorio 3
 
 **Nombre:** Benjamin Sebastian Gacitúa Paredes
-**RUT (sin dígito verificador):** 21.431.497-5
+**RUT (sin dígito verificador):** 21.431.497
 **Semilla S:** 497
 **Fecha:** 23-09-2026
 
