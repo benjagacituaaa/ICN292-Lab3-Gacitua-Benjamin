@@ -26,7 +26,7 @@
 ## Cómo reproducir
 
 1. En n8n: menú del workflow (⋯) → **Import from File** → seleccionar el `.json`.
-2. Importar en este orden: triage, resumen, errorhandler, emisor.
+2. Importar en este orden: triage, resumen, emisor.
 3. **Credenciales.** Los nodos de Google Sheets y Gmail referencian credenciales por su id interno; los tokens no se exportan. Al importar hay que conectar una cuenta propia de Google en esos nodos.
 4. **Registro.** El nodo Registro escribe en una planilla con estas columnas en la fila 1:
    `timestamp, id_solicitud, sku, monto, dias_desde_compra, estado_producto, email_cliente, ruta, motivo, umbral_U, plazo_D, valor_uf, monto_uf`
